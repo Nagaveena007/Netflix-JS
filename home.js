@@ -75,12 +75,14 @@ const getMovies = async () => {
                 <img src=${movie.imageUrl} class="img-fluid section-img image" alt="" />
                 </div>
                 `;
+                return movie;
               })
               .join("")};
             </div>
             </div>
             </div>
             `;
+                return g;
               })
               .join("")}
            
@@ -101,6 +103,7 @@ const getMovies = async () => {
           </div>
           `;
         galleries.innerHTML = gallery;
+        return m;
       });
     }
   } catch (err) {
