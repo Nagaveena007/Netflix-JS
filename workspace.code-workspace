@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\..\\Revision\\M3\\M3D10\\01_Netflix_Logo"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Netflix-JS"
+  }
+}

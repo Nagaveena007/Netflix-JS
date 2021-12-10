@@ -24,7 +24,7 @@ const getMovies = async () => {
             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTgyODk0ZGFhY2FhMjAwMTU1MmExNjMiLCJpYXQiOjE2Mzg5NzQwMzgsImV4cCI6MTY0MDE4MzYzOH0.US5LnaBA-naCQfgPfcQYfFn8yEoEbO9Y468H2YPq7kw",
         },
       }
-    );
+    );  
     if (response.ok) {
       const categories = await response.json();
       console.log(categories);
@@ -49,14 +49,16 @@ const getMovies = async () => {
       );
       console.log(allMovies);
 
-      allMovies.map((m) => {
-        const group = [];
-        let i = 0;
-        while (i < m.length) {
-          group.push(m.slice(i, (i += 6)));
-        }
-        console.log("group", group);
-        const gallery = `
+      allMovies
+        .map((m) => {
+          const group = [];
+          let i = 0;
+          while (i < m.length) {
+            group.push(m.slice(i, (i += 6)));
+          }
+          console.log("group", group);
+
+          const gallery = `
           <div class=""movie-gallery m-2>
           <h5>${m[0].genres}</h5>
           <div class="carousel slide" data-bs-ride="carousel" id="${
@@ -65,24 +67,22 @@ const getMovies = async () => {
             <div class="carousel-inner">
             ${group
               .map((g, i) => {
-                `
+                return `
             <div class="carousel-item ${i === 0 ? "active" : ""}">
             <div class="movie-row">
             <div class="row">
             ${g
               .map((movie) => {
-                ` <div class="col-md-2">
+                return ` <div class="col-md-2">
                 <img src=${movie.imageUrl} class="img-fluid section-img image" alt="" />
                 </div>
                 `;
-                return movie;
               })
               .join("")};
             </div>
             </div>
             </div>
             `;
-                return g;
               })
               .join("")}
            
@@ -102,9 +102,10 @@ const getMovies = async () => {
           </div>
           </div>
           `;
-        galleries.innerHTML = gallery;
-        return m;
-      });
+          galleries.innerHTML = gallery;
+          return m;
+        })
+        .join("");
     }
   } catch (err) {
     console.log(err);
