@@ -87,7 +87,7 @@ body {
 /* banner */
 
 .banner {
-  background: url(./assets/media/squid-game.jpg) center/cover no-repeat;
+  background: url(squid-game.jpg) center/cover no-repeat;
   color: white;
   height: 39rem;
 }
