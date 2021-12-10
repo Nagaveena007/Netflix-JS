@@ -199,7 +199,11 @@ body {
   margin-top: 1.5rem;
   column-gap: 0.3rem;
 }
-
+.image {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
 .section-img {
   border-radius: 0.1rem;
   transition: 0.3s ease-in-out;
