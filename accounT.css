@@ -1,0 +1,38 @@
+body {
+    font-family: "Kanit", sans-serif;
+    
+  }
+  .nav-bar-backGroundColor{
+background-color: black;
+color: white;  
+
+}
+.search-nav{
+    color: white;
+    background-color: white;
+}
+.bi .bi-search {
+    color: white;
+    background-color: white;
+    }
+    .padding{
+        padding-left: 50px;
+    }
+    .hr_1 {
+        height: 3px;
+        width: 936px;
+  border: 1px solid;
+        color: black;
+        }
+        .kids-link{
+color: white;
+        }
+        .margin{
+            
+        }
+        .dropdowncolor{
+            background-color: transparent;
+            min-height: 22px;
+            min-width: 22px;
+border-color: transparent;
+        }

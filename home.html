@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home-page.css" />
+    <script
+      src="https://kit.fontawesome.com/fbd41d9953.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="container-fluid navt">
+      <nav class="navbar navbar-expand-lg nav-center">
+        <a class="navbar-brand" href="#"
+          ><img src="netflix_logo.png" class="nav-logo-img" alt="netflix logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link nav-link-active" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TV Shows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recently Added</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">My List</a>
+            </li>
+          </ul>
+
+          <i class="fas fa-search"></i>
+          <a class="nav-link" href="#">KIDS</a>
+          <i class="fas fa-bell"></i>
+          <img src="avatar.png" class="nav-avatar" alt="nav-avatar" />
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </nav>
+    </div>
+
+    <!-- end of nav -->
+
+    <!-- header section -->
+    <header class="header">
+      <div class="banner">
+        <div class="banner-info">
+          <h1 class="banner-title">SQUID GAMES</h1>
+          <div class="banner-icons">
+            <button class="banner-btn">Play</button>
+            <button class="banner-btn">My List</button>
+          </div>
+          <div class="banner-description">
+            Hundreds of cash-strapped players accept a strange invitation to
+            compete in children's games. Inside, a tempting prize awaits — with
+            deadly high stakes.
+          </div>
+        </div>
+        <div class="banner-fade"></div>
+      </div>
+    </header>
+
+    <!-- end of header section -->
+
+    <!-- title section -->
+
+    <div class="header-grid section-center">
+      <div class="header-left">
+        <h1 class="header-title">TV Shows</h1>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="icons-border">
+          <i class="fas fa-list header-icons"></i>
+        </div>
+        <div class="icons-border">
+          <i class="fas fa-th header-icons"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of title section -->
+
+    <!-- trending now section -->
+
+    <section class="shows section-center">
+      <h3 class="shows-title">Trending Now</h3>
+      <div class="shows-imgs">
+        <img src="media0.webp" class="img-fluid section-img" alt="" />
+      </div>
+    </section>
+
+    <!-- end of trending now section -->
+
+    <!-- Watch again section -->
+
+    <section class="shows shows-margin section-center">
+      <h3 class="shows-title">Watch It Again</h3>
+      <div class="shows-imgs">
+        <img src="media5.webp" class="img-fluid section-img" alt="" />
+      </div>
+    </section>
+
+    <!-- end of Watch again section -->
+
+    <!-- New Releases section -->
+
+    <section class="shows shows-margin section-center">
+      <h3 class="shows-title">New Releases</h3>
+      <div class="shows-imgs">
+        <img src="media10.jpg" class="img-fluid section-img" alt="" />
+      </div>
+    </section>
+
+    <!-- end of New Release section -->
+
+    <!-- New Releases section -->
+
+    <section class="shows shows-margin section-center">
+      <h3 class="shows-title">Coming Soon</h3>
+      <div class="shows-imgs">
+        <img src="media15.jpg" class="img-fluid section-img" alt="" />
+      </div>
+    </section>
+
+    <!-- end of New Release section -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="social-icons">
+        <i class="fab fa-facebook-square footer-icons"></i>
+        <i class="fab fa-instagram-square footer-icons"></i>
+        <i class="fab fa-twitter footer-icons"></i>
+        <i class="fab fa-youtube footer-icons"></i>
+      </div>
+
+      <div class="grid-footer">
+        <div class="footer-section">
+          <p>Audio and Subtitles</p>
+          <p>Media Centre</p>
+          <p>Privacy</p>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="footer-section">
+          <p>Audio Description</p>
+          <p>Investor Relations</p>
+          <p>Legal Notices</p>
+        </div>
+
+        <div class="footer-section">
+          <p>Help Centre</p>
+          <p>Jobs</p>
+          <p>Cookie Preferences</p>
+        </div>
+
+        <div class="footer-section">
+          <p>Gift Cards</p>
+          <p>Terms of Use</p>
+          <p>Corporate Information</p>
+        </div>
+      </div>
+      <button class="btn-footer">Service Code</button>
+      <p class="p-footer">&copy; 1997-2021 Netflix, Inc.</p>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

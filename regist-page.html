@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Netflix - Profile Page</title>
+  </head>
+  <body>
+
+    <!-- Just an image -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <img class="navbar-logo" src="assets\netflix_logo.png"  alt="">
+      </a>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-center">
+          <h1 class="title">Edit Profile</h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="assets\avatar.png" class="img-fluid" alt="Not available" >
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-12">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            </div>
+            <input type="text" class="form-control d-block" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="col-12">
+            <div class="dropdown-language">
+            <div class="dropdown">
+              <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Italian</a>
+                <a class="dropdown-item" href="#">Spanish</a>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+            <div class="maturity">
+              <hr>
+              <br>
+              <Label>Maturity Settings:</Label><br>
+              <button type="button" class="btn btn-secondary">ALL MATURITY RATINGS</button><br>
+              <p>Show titles of all maturity ratings for this profile.</p>
+              <button type="button" class="btn btn-outline-secondary">EDIT</button>
+              <hr>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9">
+          <p>Autoplay controls</p>
+          <!-- All the string left like this need to be put in a proper container I know, I need to know what's the perfecto one, I'll do it later-->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Autoplay next episode in a series on all devices.
+            </label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Autoplay previews while browsing on all devices.
+            </label>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <hr>
+          <div class="col-3"></div>
+          <div class="col-9">
+            <button type="button" class="btn btn-light">SAVE</button>
+            <button type="button" class="btn btn-outline-secondary">CANCEL</button>
+            <button type="button" class="btn btn-outline-secondary">DELETE PROFILE</button>
+          </div>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: hsl(0, 0%, 7%);
+  color: white;
+}
+
+.navbar-logo {
+    width: 7rem;
+    height: 3.25;
+}
+
+.navbar {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.container {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.img-fluid {
+    max-width: 8rem;
+    max-height: 8rem;
+}
+
+.dropdown-language {
+    display: block;
+}
+
+.section-center {
+    text-align: center;
+}
